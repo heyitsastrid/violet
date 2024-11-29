@@ -1,0 +1,40 @@
+<div class="vi-jump-to-content">
+	<a href="#main" class="vi-button">Jump to content</a>
+	<p><span>“</span>Boys will be girls<span>”</span></p>
+</div>
+
+<style>
+	.vi-jump-to-content {
+		position: fixed;
+		top: -5rem;
+		left: 0;
+		right: 0;
+		background-color: var(--vi-body-background-color);
+		display: flex;
+		padding: 0.5rem 1rem;
+		gap: 1rem;
+		align-items: center;
+		justify-content: space-between;
+		z-index: 9999;
+		height: 3rem;
+		transition: top .3s;
+	}
+
+	.vi-jump-to-content:focus-within {
+		top: 0;
+	}
+
+	.vi-jump-to-content p {
+		opacity: 0.8;
+		font-style: italic;
+	}
+
+	.vi-jump-to-content p span {
+		font-family:'Times New Roman', Times, serif;
+		margin: 1px;
+	}
+
+	:global(#main) {
+		scroll-margin-top: 4rem
+	}
+</style>

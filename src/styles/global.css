@@ -1,0 +1,212 @@
+@font-face {
+	font-family: "Manrope";
+	src: url("/fonts/Manrope.woff2") format("woff2");
+	font-weight: 200 800;
+	font-display: swap;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Inter";
+	src: url("/fonts/Inter.woff2") format("woff2");
+	font-weight: 100 900;
+	font-display: swap;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Inter";
+	src: url("/fonts/Inter - Italic.woff2") format("woff2");
+	font-weight: 100 900;
+	font-display: swap;
+	font-style: italic
+}
+
+/*   Reset CSS   */
+*, *::before, *::after {
+	box-sizing: content-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+img, picture, svg, video {
+	display: block;
+	max-width: 100%;
+}
+
+body {
+	min-height: 100vh;
+	min-height: 100svh;
+}
+
+html {
+	color-scheme: dark light;
+	scroll-behavior: smooth;
+}
+
+:root {
+	--vi-body-font: Inter, Roboto, Arial, sans-serif;
+	--vi-display-font: Manrope, Inter, Helvetica, Arial, sans-serif;
+
+	--vi-body-background-color: hsl(345 14% 89%);
+	--vi-body-background-color--hsl: 345 14% 89%;
+	--vi-body-color: hsl(300 7% 14%);
+	--vi-body-color--hover: hsl(300 3% 25%);
+	--vi-body-color--hsl: 300 7% 14%;
+
+	--vi-body-color--secondary: hsl(206 25% 30%);
+	--vi-body-color--secondary--hsl: 206 25% 30%;
+
+	--vi-link-color: hsl(15 40% 51%);
+	--vi-link-color--hsl: 15 40% 51%;
+	--vi-link-color--hover: hsl(15 39% 33%);
+
+	--vi-accent-color: hsl(346 20% 43%);
+	--vi-accent-color--hsl: 346 20% 43%;
+	--vi-accent-color--hover: hsl(347 19% 27%);
+	--vi-accent-color--secondary: hsl(14 61% 61%);
+
+	--vi-navbar-background-color: hsl(200 15% 92%/50%);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--vi-body-background-color: hsl(300 7% 14%);
+		--vi-body-background-color--hsl: 300 7% 14%;
+		--vi-body-color: hsl(345 14% 89%);
+		--vi-body-color--hover: hsl(300 1% 57%);
+		--vi-body-color--hsl: 345 14% 89%;
+
+		--vi-body-color--secondary: hsl(206 21% 79%);
+		--vi-body-color--secondary--hsl: 206 21% 79%;
+	
+		--vi-link-color: hsl(15 62% 71%);
+		--vi-link-color--hsl: 15 62% 71%;
+		--vi-link-color--hover: hsl(14, 59%, 85%);
+
+		--vi-accent-color: hsl(346 15% 66%);
+		--vi-accent-color--hsl: 346 15% 66%;
+		--vi-accent-color--hover: hsl(345 14% 89%);
+		--vi-accent-color--secondary: hsl(15 62% 71%);
+	
+		--vi-navbar-background-color: hsl(199 10% 38%/50%);
+	}	
+}
+
+body {
+	background-color: var(--vi-body-background-color);
+	color: var(--vi-body-color);
+	line-height: 1.5;
+	font-family: var(--vi-body-font);
+	font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: var(--vi-body-color--secondary);
+	font-family: var(--vi-display-font);
+	line-height: 1.15;
+	margin: 0.5em 0 0.25em;
+	font-weight: 700;
+}
+
+a {
+	color: var(--vi-link-color);
+	text-decoration: none;
+	transition: color .15s;
+}
+
+a:hover {
+	color: var(--vi-link-color--hover);
+	text-decoration: underline;
+}
+
+h1 {
+	font-size:3rem;
+	font-weight: 500;
+}
+
+h2 {
+	font-size:2.3rem;
+}
+
+h3 {
+	font-size:1.6rem;
+}
+
+h4 {
+	font-size:1.3rem;
+}
+
+h5 {
+	font-size:1.1rem;
+}
+
+h6 {
+	font-size:0.9rem;
+}
+
+strong {
+	font-weight:700;
+}
+
+em, i {
+	font-style:italic;
+}
+
+img {
+	border-radius:.5rem;
+	margin:1.25rem 0;
+}
+
+ol, ul {
+	margin-left:2ch;
+}
+
+hr {
+	margin:1rem 0;
+	border:solid .1rem var(--vi-body-color--secondary);
+	border-radius:1rem;
+}
+
+p + p {
+	margin-top:1rem;
+}
+
+:is(h1, h2, h3, h4, h5, h6) + :is(p, blockquote, ul, ol) {
+	margin-top:.75rem;
+}
+
+code {
+	font-family:"Courier New", Courier, monospace, monospace;
+	border:solid 1px rgb(125 125 125/0.1);
+	padding:2px;
+	box-sizing:content-box;
+	border-radius:2px;
+}
+
+.vi-button {
+	display: inline-block;
+	padding: 0.4rem 0.8rem;
+	border: solid 2px var(--vi-link-color);
+	color: var(--vi-link-color);
+	border-radius: 0.65rem;
+	font-family: var(--vi-display-font);
+	font-weight: 600;
+
+	transition: color .1s, border-color .1s, background-color .1s;
+}
+
+.vi-button:hover, 
+.vi-button:focus-visible {
+	color: var(--vi-link-color--hover);
+	border-color: var(--vi-link-color--hover);
+	text-decoration: underline;
+}
+
+.vi-button:focus-visible {
+	background-color: hsl(var(--vi-link-color--hsl)/25%);
+	outline: transparent;
+}
