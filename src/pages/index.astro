@@ -1,4 +1,5 @@
 ---
+import WelcomeText from '../components/WelcomeText.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
@@ -9,26 +10,29 @@ import Layout from '../layouts/Layout.astro';
 	>
 	<div class="vi-main-wrapper">
 		<div class="vi-welcome">
-			<div class="vi-welcome-text">
-				<h1>
-					Hi! 
-					<div>
-						I'm <span>astrid</span>
-					</div>
-				</h1>
-				<a href="#main" class="vi-welcome__more-info">
-					Scroll down
-				</a>
-				<div class="vi-welcome__slider"><span></span><span></span></div> 			
-			</div>
+			<WelcomeText />
 		</div>
 		<main id="main">
 			<section class="vi-mp-box">
 				<h2>Who?</h2>
-				<p>I'm astrid, a random transfem living in Catalunya right now. </p>
+				<p>I'm astrid, a random transfem living in Catalunya right now. Probably a nerd, a bit gay and maybe neurodivergent.</p>
+				<p>I like trains.</p>
+				<p>oh and also taking pictures of them</p>
+				<p>nya~</p>
 			</section>
-			<section class="vi-mp-box"></section>
-			<section class="vi-mp-box"></section>
+			<section class="vi-mp-box">
+				<p>blogs:</p>
+				<ul>
+					<li><a href="/blogs/test">test blog 1</a></li>
+					<li>test blog 2</li>
+					<li>test blog 3</li>
+				</ul>
+			</section>
+			<section class="vi-mp-box">
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorum perferendis adipisci quas maiores sed esse laborum illum sapiente molestiae doloremque excepturi ipsa quis animi, quod suscipit! Hic, incidunt nobis?
+				</p>
+			</section>
 		</main>
 	</div>
 	<div class="footer">
@@ -43,133 +47,65 @@ import Layout from '../layouts/Layout.astro';
 	}
 
 	.vi-main-wrapper {
-		background-image: radial-gradient(at left top, hsl(300 7% 14%/0%), hsl(300 7% 14%/20%) 50%, hsl(300 7% 14%/100%) 95%), url(../assets/sunset.jpg);
+		background-image: radial-gradient(at left top, hsl(300 7% 14%/0%) 20%, hsl(300 7% 14%/50%) 65%, hsl(300 7% 14%/100%) 95%), url(../assets/sunset.jpg);
 		background-position: center, center bottom;
 		background-attachment: fixed, fixed;
 		background-size: cover, cover;
 		background-repeat: no-repeat, no-repeat;
-
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 2em;
-		align-items: stretch;
-
-		padding: 2em;
 	}
 
-	.vi-welcome {
-		height: 100%
+
+	@media only screen and (max-width: 899px) {
+		main {
+			margin-top: 4em;
+			background-color: hsl(300 7% 14%/60%);
+			padding: 0 2em 2em;
+			position: relative
+		}
+
+		.vi-welcome {
+			height: 100%;
+			padding: 2em;
+		}
+		
+		main::before {
+			position: absolute;
+			bottom: 100%;
+			left: 0;
+			width: 100%;
+			height: 6em;
+			background: linear-gradient(to top, hsl(300 7% 14%/60%), hsl(300 7% 14%/0));
+			content: "";
+		}
+	}
+	@media only screen and (min-width: 900px) {
+		.vi-main-wrapper {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			align-items: stretch;
+			justify-content: center;
+			gap: 2em;
+			padding: 2em;
+		}
+
+		main {
+			margin-top: 100vh;
+			max-width: 700px;
+			margin-left: auto;
+		}
 	}
 
-	.vi-welcome-text {
-		height: calc(100dvh - 4em);
-		position: sticky;
-		top: 2em;
-		left: 0;
-	}
-
-	.box {
-		height: 100vh;
-		background-color: blue;
+	.vi-mp-box {
+		background-color: hsl(var(--vi-body-background-color--hsl)/80%);
+		padding: 1.25rem;
 		margin: 1rem 0;
+		border-radius: 1.25rem;
+		border: solid 1px hsl(vaR(--vi-body-color--secondary--hsl)/50%);
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(10px);
 	}
 
-	main {
-		margin-top: 100vh;
+	.vi-mp-box h2:first-child {
+		margin-top: 0.25em;
 	}
-
-	.vi-welcome-text {
-		/* padding: 0 3rem 3rem; */
-		display: grid;
-		grid-template-columns: auto 1fr;
-		gap: 1rem 1.5rem;
-		justify-items: start;
-		align-content: end;
-	}
-
-	.vi-welcome-text h1 {
-		color: hsl(345 14% 89%);
-		font-size: clamp(1.75rem, 5vmin, 3rem);
-		margin: 0;
-		white-space: nowrap;
-		font-weight: 800;
-		line-height: 1;
-	}
-
-	.vi-welcome-text h1 div {
-		font-size: clamp(3rem, 10vmin, 10rem);
-	}
-
-	.vi-welcome-text h1 div span {
-		color: transparent;
-		background-image: linear-gradient(45deg, hsl(346 15% 66%), hsl(15 62% 71%), hsl(346 15% 66%), hsl(15 62% 71%));
-		background-clip: text;
-		animation: gradient 5s infinite;
-		background-size: 400%;
-	}
-
-	@keyframes gradient {
-		0% {
-			background-position: 0% 100%
-		}
-
-		100% {
-			background-position: 100% 0%
-		}
-	}
-
-	@media only screen and (max-width: 700px) {
-		.aroma-header__text {
-			padding: 0 1rem 3rem;
-			gap: 1rem;
-		}
-	}
-
-	.vi-welcome__more-info {
-		color: var(--vi-body-color--secondary);
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		line-height: 1;
-	}
-
-	.vi-welcome__more-info:hover {
-		text-decoration: none;
-	}
-
-	.vi-welcome__slider {
-		display: flex;
-		flex-direction: column;
-		gap: 5px;
-		grid-area: 1/1/3/2;
-	}
-
-	.vi-welcome__slider span {
-		width: 3px;
-		background-color: hsl(var(--vi-accent-color--hsl)/50%);
-		flex-shrink: 0;
-		transition: flex-grow .3s;
-		border-radius: 3px
-	}
-
-	.vi-welcome__slider span:last-of-type {
-		flex-grow: 1;
-		flex-basis: 10px;
-	}
-
-	.vi-welcome__slider span:first-of-type {
-		flex-grow: 0;
-	}
-
-	.vi-welcome__more-info:hover ~ .vi-welcome__slider span {
-		transition: flex-grow .5s;
-	}
-
-	.vi-welcome__more-info:hover ~ .vi-welcome__slider span:last-of-type {
-		flex-grow: 0;
-	}
-
-	.vi-welcome__more-info:hover ~ .vi-welcome__slider span:first-of-type {
-		flex-grow: 1;
-	}
-
 </style>
