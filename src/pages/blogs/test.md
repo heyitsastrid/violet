@@ -11,6 +11,6 @@ Lorem ipsum
 
 i'd like a coffee, please
 
-![alt text blah blah](../../assets/sunset.jpg)
+![alt text blah blah](/sunset.jpg)
 
 nya?
