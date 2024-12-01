@@ -1,5 +1,6 @@
 ---
 import WelcomeText from '../components/WelcomeText.astro';
+import Gallery from '../components/Gallery.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
@@ -29,16 +30,17 @@ import Layout from '../layouts/Layout.astro';
 				<p>I don't like copyright, which means that most pictures I take can be used for free; just remember to add attribution and we'll be fine.</p>
 			</section>
 			<section class="vi-mp-box">
-				<h2>Gallery</h2>
-				<p>I should show a bunch of pics in this place :P</p>
-			</section>
-			<section class="vi-mp-box">
-				<h2>Links</h2>
+				<h2>Where?</h2>
+				<p>Find me on:</p>
 				<ul>
 					<li><a href="https://ohai.social/@aroma" rel="me">Mastodon</a> (<code>@aroma@ohai.social</code>)</li>
 					<li><a href="https://www.flickr.com/photos/its_astrid/">Flickr</a></li>
 					<!-- <li><a href="/blogs/">Blogs?</a></li> -->
 				</ul>
+			</section>
+			<section class="vi-mp-box">
+				<h2>Gallery</h2>
+				<Gallery />
 			</section>
 		</main>
 	</div>
@@ -58,15 +60,13 @@ import Layout from '../layouts/Layout.astro';
 		background-attachment: fixed, fixed;
 		background-size: cover, cover;
 		background-repeat: no-repeat, no-repeat;
-
-		padding-bottom: 8em
 	}
 
 	@media only screen and (max-width: 899px) {
 		main {
 			margin-top: 4em;
 			background-color: hsl(300 7% 14%/60%);
-			padding: 0 2em 2em;
+			padding: 0 1.25em 4em;
 			position: relative
 		}
 
@@ -93,7 +93,7 @@ import Layout from '../layouts/Layout.astro';
 			align-items: stretch;
 			justify-content: center;
 			gap: 2em;
-			padding: 2em 2em 8em;
+			padding: 2em 2em 6em;
 		}
 
 		main {

@@ -1,0 +1,36 @@
+---
+import GalleryItem from "./GalleryItem.astro";
+---
+<div class="vi-gallery">
+	<GalleryItem href="/gallery/image1.webp" src="/gallery/image1 (min).webp" alt="Alt text here" info="Train sunset" details="Canon 550D, f/5.6, 1/80, ISO800"/>
+	<GalleryItem href="/gallery/image2.webp" src="/gallery/image2 (min).webp" alt="Alt text here" info="449 at EdF" details="Canon 550D, f/5.6, 1/500, ISO400"/>
+	<GalleryItem href="/gallery/image1.webp" src="/gallery/image1 (min).webp" alt="Alt text here" info="Train sunset" details="Canon 550D, f/5.6, 1/80, ISO800"/>
+	<GalleryItem href="/gallery/image2.webp" src="/gallery/image2 (min).webp" alt="Alt text here" info="449 at EdF" details="Canon 550D, f/5.6, 1/500, ISO400"/>
+</div>
+<a href="/gallery" class="vi-gallery-link">See more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg></a>
+
+<style>
+.vi-gallery {
+	display: flex;
+	gap: 1em;
+	overflow-x: auto;
+	padding-top: 0.5em;
+}
+
+.vi-gallery-link {
+	font-size: 1.15em;
+	margin: 0.5em 0 0 auto;
+	font-family: var(--vi-display-font);
+	font-weight: 600;
+	display: inline-block;
+}
+
+.vi-gallery-link svg {
+	display: inline;
+	height: 1.15em;
+	width: 1.15em;
+	vertical-align: -4px;
+	fill: currentColor;
+}
+
+</style>
