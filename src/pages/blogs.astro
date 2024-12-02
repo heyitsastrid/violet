@@ -1,0 +1,23 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const allPosts = await Astro.glob('./blogs/*.md');
+import BlogItem from "../components/BlogItem.astro";
+---
+
+<BaseLayout
+	title="astrid's blogs"
+	description="This is just a bunch of stuff I like to write about."
+	image=""
+	>
+	<h1>My blogs</h1>
+	<p>I sometimes write about random stuff. Here they are:</p>
+	<ul>
+		{allPosts.map((post) => <BlogItem url={post.url} title={post.frontmatter.title} pubDate={new Date(post.frontmatter.pubDate).toLocaleDateString('en-GB')} imageurl={post.frontmatter.image.url} imagealt={post.frontmatter.image.alt} description={post.frontmatter.description} />)}
+	</ul>
+</BaseLayout>
+
+<style>
+	ul {
+		margin: 0;
+	}
+</style>

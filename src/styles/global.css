@@ -100,7 +100,7 @@ html {
 body {
 	background-color: var(--vi-body-background-color);
 	color: var(--vi-body-color);
-	line-height: 1.5;
+	line-height: 1.65;
 	font-family: var(--vi-body-font);
 	font-weight: 400;
 }
@@ -164,6 +164,11 @@ img {
 
 ol, ul {
 	margin-left:2ch;
+	margin-bottom: 1rem
+}
+
+ol:last-child, ul:last-child {
+	margin-bottom: 0;
 }
 
 hr {

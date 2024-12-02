@@ -2,6 +2,7 @@
 import WelcomeText from '../components/WelcomeText.astro';
 import Gallery from '../components/Gallery.astro';
 import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout
@@ -26,7 +27,7 @@ import Layout from '../layouts/Layout.astro';
 				<p>I've collaborated in some wikis in the past, both content-wise and in the technical aspect of it. I helped designing one of the largest wikis on the Spanish side, as well as some other wikis.</p>
 				<p>Unfortunately, I'm no longer as active as I used to be. However, if you have any wiki-related inquiry, I might be able to help you.</p>
 				<h3>Photography</h3>
-				<p>i like to go outside and take pictures of my city. It's become a small hobby of mine, even though I'm not the best at it. If you scroll down, there's a small gallery of pictures I've taken. </p>
+				<p>I like to go outside and take pictures of my city. It's become a small hobby of mine, even though I'm not the best at it. If you scroll down, there's a small gallery of pictures I've taken. </p>
 				<p>I don't like copyright, which means that most pictures I take can be used for free; just remember to add attribution and we'll be fine.</p>
 			</section>
 			<section class="vi-mp-box">
@@ -35,6 +36,10 @@ import Layout from '../layouts/Layout.astro';
 				<ul>
 					<li><a href="https://ohai.social/@aroma" rel="me">Mastodon</a> (<code>@aroma@ohai.social</code>)</li>
 					<li><a href="https://www.flickr.com/photos/its_astrid/">Flickr</a></li>
+				</ul>
+				<p>Other links:</p>
+				<ul>
+					<li><a href="/drawer">My tailor's drawer</a></li>
 					<!-- <li><a href="/blogs/">Blogs?</a></li> -->
 				</ul>
 			</section>
@@ -45,7 +50,8 @@ import Layout from '../layouts/Layout.astro';
 		</main>
 	</div>
 	<div class="vi-mp-footer">
-		This is a footer. I will probably put 88x31 buttons here. Also everything under CC BY-SA 4.0 because I say so. I guess. Commit push.
+		<!-- This is a footer. I will probably put 88x31 buttons here. Also everything under CC BY-SA 4.0 because I say so. I guess. Commit push. -->
+		 <Footer />
 	</div>
 </Layout>
 
@@ -119,7 +125,7 @@ import Layout from '../layouts/Layout.astro';
 
 	.vi-mp-footer {
 		position: relative;
-		padding: 3em;
+		padding: 3em 0 0;
 		text-align: center;
 	}
 

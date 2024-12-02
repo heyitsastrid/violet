@@ -1,12 +1,27 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
+const url = "https://aromaaa.netlify.app/"
 const {frontmatter} = Astro.props;
+const published = new Date(frontmatter.pubDate).toLocaleDateString('en-GB');
+const image = url + frontmatter.image;
 ---
 <BaseLayout 
 	title={frontmatter.title}
 	description={frontmatter.description}
-	image={frontmatter.image}
+	image={image}
 >
 		<h1>{frontmatter.title}</h1>
+		<div class="vi-heading">
+			<p>By <strong>{frontmatter.author}</strong> &bull; Published on <strong>{published}</strong></p>
+		</div>
+		<img src={frontmatter.image.url} alt={frontmatter.image.alt}>
 		<slot />
 </BaseLayout>
+<style>
+.vi-heading {
+	background-color: hsl(var(--vi-accent-color--hsl)/10%);
+	padding: 1rem;
+	margin-bottom: 1rem;
+	border-radius: 1rem;
+}
+</style>

@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: Test blog post
+title: Test blog post 4
 description: What's this? I have no idea. UwU
-pubDate: 2024-12-01
+pubDate: 2024-12-04
 author: 'Astrid'
 image:
     url: '/sunset.jpg'

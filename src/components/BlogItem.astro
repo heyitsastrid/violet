@@ -1,0 +1,51 @@
+---
+const {url, title, pubDate, description} = Astro.props;
+---
+<li class="vi-blogitem">
+	<div class="vi-blogitem__content">
+		<a class="vi-blogitem__title" href={url}>{title}</a>
+		<div class="vi-blogitem__pubDate">Published on {pubDate}</div>
+		<p class="vi-blogitem__description">{description}</p>
+	</div>
+</li>
+
+<style>
+.vi-blogitem {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	place-items: center stretch;
+	background-color: hsl(var(--vi-accent-color--hsl)/5%);
+	padding: 0.5rem;
+	border-radius: 1rem;
+	margin: 1rem 0;
+	border: solid transparent 1px;
+
+	transition: background-color .2s, border .2s;
+}
+
+.vi-blogitem:has(a:hover) {
+	background-color: hsl(var(--vi-accent-color--hsl)/1%);
+	border: solid 1px hsl(var(--vi-body-color--secondary--hsl)/50%)
+}
+
+.vi-blogitem__content {
+	padding: 0.5rem;
+}
+
+.vi-blogitem__title {
+	font-size: 1.2em;
+	font-weight: 600;
+	font-family: var(--vi-display-font);
+	display: inline-block;
+}
+
+.vi-blogitem__pubDate {
+	font-size: 0.8em;
+	color: hsl(var(--vi-body-color--hsl)/80%);
+	line-height: 1.4;
+}
+
+.vi-blogitem__description {
+	margin-top: 0.5em;
+}
+</style>
