@@ -164,10 +164,15 @@ img {
 
 ol, ul {
 	margin-left:2ch;
-	margin-bottom: 1rem
+	margin-bottom: 1rem;
 }
 
-ol:last-child, ul:last-child {
+li {
+	margin-bottom: 0.25em;
+	line-height: 1.45;
+}
+
+ol:last-child, ul:last-child, li:last-child {
 	margin-bottom: 0;
 }
 
@@ -179,6 +184,11 @@ hr {
 
 p + p {
 	margin-top:1rem;
+}
+
+small {
+	font-size: 0.7em;
+	vertical-align: baseline;
 }
 
 :is(h1, h2, h3, h4, h5, h6) + :is(p, blockquote, ul, ol) {
