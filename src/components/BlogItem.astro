@@ -1,13 +1,13 @@
 ---
 const {url, title, pubDate, description} = Astro.props;
 ---
-<li class="vi-blogitem">
+<article class="vi-blogitem">
 	<div class="vi-blogitem__content">
 		<a class="vi-blogitem__title" href={url}>{title}</a>
 		<div class="vi-blogitem__pubDate">Published on {pubDate}</div>
 		<p class="vi-blogitem__description">{description}</p>
 	</div>
-</li>
+</article>
 
 <style>
 .vi-blogitem {
