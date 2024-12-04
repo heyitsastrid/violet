@@ -28,7 +28,7 @@ Written content not created by me but hosted on the website may not be under Cre
 
 The website features a variety of original images and pictures taken by me, most of which are available to download under a Creative Commons licence, if it is explicitly stated this way. This means that you are free to use the pictures as long as you follow the licence.
 
-Most pictures are under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), which allow you to use, adapt or repurpose the content as long as proper credit is given and the work you publish is also under the same licence; while others are under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/), which doesn't allow for commercial use. Pictures that are not under a Creative Commons licence may not be used unless you get permission from its author (me).
+Most pictures are under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), which allow you to use, adapt or repurpose the content as long as proper credit is given and the work you publish is also under the same licence; while others are under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/), which does not allow for commercial use. Pictures that are not under a Creative Commons licence may not be used unless you get permission from its author (me).
 
 #### 2.2.2. Visual content created by a third party
 
