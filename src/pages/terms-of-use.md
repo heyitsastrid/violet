@@ -5,9 +5,8 @@ description: Terms of Use for itsastrid.me and its services
 pubDate: 2024-12-02
 author: 'Astrid'
 image:
-    url: '/sunset.jpg'
-    alt: 'A sunset :3'
-tags: ["astro", "blogging", "learning in public"]
+    url: '/banner.png'
+    alt: 'Banner image'
 ---
 This document outlines the terms of use of the website itsastrid.me (hereinafter referred to as "**the website**") when a user ("**you**") visits it. All services and resources, unless explicitly stated otherwise, are provided by the website owner ("**I**" or "**me**"). If you visit the website or decide to use any of the services or resources provided in this website by me, you agree with the following terms of use ("**terms**", "**this document**"); otherwise, if you decide to disagree, you must leave immediately.
 
@@ -29,7 +28,7 @@ Written content not created by me but hosted on the website may not be under Cre
 
 The website features a variety of original images and pictures taken by me, most of which are available to download under a Creative Commons licence, if it is explicitly stated this way. This means that you are free to use the pictures as long as you follow the licence.
 
-Most pictures are under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), which allow you to use, adapt or repurpose the content as long as proper credit is given and the work you publish is also under the same licence. Pictures that are not under a Creative Commons licence may not be used unless you get permission from its author (me).
+Most pictures are under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), which allow you to use, adapt or repurpose the content as long as proper credit is given and the work you publish is also under the same licence; while others are under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/), which doesn't allow for commercial use. Pictures that are not under a Creative Commons licence may not be used unless you get permission from its author (me).
 
 #### 2.2.2. Visual content created by a third party
 

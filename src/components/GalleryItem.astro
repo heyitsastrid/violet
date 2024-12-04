@@ -1,9 +1,10 @@
 ---
-const {href, src, alt, info, details} = Astro.props
+const {src, alt, info, details} = Astro.props
+import { Image } from "astro:assets";
 ---
-<a href={href} class="vi-gallery__item">
+<a href={src.src} class="vi-gallery__item">
 	<figure>
-		<img src={src} alt={alt}>
+		<Image src={src} alt={alt} height="250" decoding="async" loading="lazy" />
 		<figcaption><div><div>{info}</div>{details}</div></figcaption>
 	</figure>
 </a>

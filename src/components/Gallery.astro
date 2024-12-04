@@ -1,11 +1,17 @@
 ---
 import GalleryItem from "./GalleryItem.astro";
+import EdF1 from "../images/gallery/IMG_20240925_190332.jpg";
+import Granota from "../images/gallery/IMG_20241006_093848.jpg";
+import Xemeneia5 from "../images/gallery/IMG_20241008_183908.jpg";
+import Sicilia from "../images/gallery/IMG_20241108_172612.jpg";
+import Sunset2 from "../images/gallery/IMG_20241121_173616.jpg";
 ---
 <div class="vi-gallery">
-	<GalleryItem href="/gallery/image1.webp" src="/gallery/image1 (min).webp" alt="Alt text here" info="Train sunset" details="Canon 550D, f/5.6, 1/80, ISO800"/>
-	<GalleryItem href="/gallery/image2.webp" src="/gallery/image2 (min).webp" alt="Alt text here" info="449 at EdF" details="Canon 550D, f/5.6, 1/500, ISO400"/>
-	<GalleryItem href="/gallery/image1.webp" src="/gallery/image1 (min).webp" alt="Alt text here" info="Train sunset" details="Canon 550D, f/5.6, 1/80, ISO800"/>
-	<GalleryItem href="/gallery/image2.webp" src="/gallery/image2 (min).webp" alt="Alt text here" info="449 at EdF" details="Canon 550D, f/5.6, 1/500, ISO400"/>
+	<GalleryItem src={Sunset2} info="Train sunset" details="Canon 550D, f/5.6, 1/80, ISO800" alt="Two trains meeting, while going in opposite directions, at the commuter train tracks that lead to the outskirts of the city. The sky is tinted pink and purple as the sun sets." />
+	<GalleryItem src={EdF1} info="449 at EdF" details="Canon 550D, f/5.6, 1/500, ISO400" alt="An empty 449 medium distance train entering the Estació de França, about to make the Barcelona-Reus service."/>
+	<GalleryItem src={Granota} info="Granota at les Planes" details="Canon 550D, f/5.0, 1/400, ISO400" alt="A FCC class 400 &#x0022;frog&#x0022; train arriving at les Planes station, from the FGC depot in Rubí, in the middle of the vegetation of the Collserola park. It's a three-car set with white-and-green carriages which, combined with the round front lights, make it resemble a frog."/>
+	<GalleryItem src={Xemeneia5} info="Uninvited guest" details="Canon 550D, f/4.5, 1/500, ISO100" alt="&quot;Un Intruso (uninvited, into chaos)&quot;, by Mike Nelson, is a small hut next to the power plant. Built with the remains of the demolished buildings nearby, it seems as if it has always been here, as if it wasn't just an art piece. The visitor is invited to enter and take a look to the chimneys: a megalithic statement of power, not only from the perspective of energy, but also on political, economic, environmental and, above all, human levels; making the observer reflect about their future."/>
+	<GalleryItem src={Sicilia} info="New tramway branch" details="Canon 550D, f/5.6, 1/320, ISO100" alt="A tram about to leave Sicília stop, heading towards the north of the city. The Glòries tower, a rounded glass skyscraper that looks like a cucumber, is in the background."/>
 </div>
 <a href="/gallery" class="vi-gallery-link">See more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg></a>
 

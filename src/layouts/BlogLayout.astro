@@ -3,12 +3,11 @@ import BaseLayout from "./BaseLayout.astro";
 const url = "https://itsastrid.me";
 const { frontmatter } = Astro.props;
 const published = new Date(frontmatter.pubDate).toLocaleDateString('en-GB');
-const image = url + frontmatter.image.url;
 ---
 <BaseLayout 
 	title={frontmatter.title}
 	description={frontmatter.description}
-	image={image}
+	image={frontmatter.image.url}
 >
 		<h1>{frontmatter.title}</h1>
 		<div class="vi-heading">

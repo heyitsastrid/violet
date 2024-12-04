@@ -1,7 +1,8 @@
 ---
 const {title, description, image} = Astro.props;
-const url = "https://itsastrid.me/"
-import '../styles/global.css'
+const url = "https://itsastrid.me";
+const imageurl = url + image;
+import '../styles/global.css';
 import Navigation from '../components/Navigation.astro';
 import JumpToContent from '../components/JumpToContent.astro';
 ---
@@ -24,14 +25,14 @@ import JumpToContent from '../components/JumpToContent.astro';
 		<meta property="og:url" content={url}>
 		<meta property="og:title" content={title}>
 		<meta property="og:description" content={description}>
-		<meta property="og:image" content={image}>
+		<meta property="og:image" content={imageurl}>
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image">
 		<meta property="twitter:url" content={url}>
 		<meta property="twitter:title" content={title}>
 		<meta property="twitter:description" content={description}>
-		<meta property="twitter:image" content={image}>
+		<meta property="twitter:image" content={imageurl}>
 		
 		<meta name="fediverse:creator" content="@aroma@ohai.social">
 		<meta name="generator" content={Astro.generator}>
