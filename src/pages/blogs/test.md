@@ -18,6 +18,4 @@ i'd like a coffee, please
 
 ![alt text blah blah](/sunset.jpg)
 
-<Image height="200" width="200" src="/src/images/banner.png">
-
 nya?

@@ -50,8 +50,18 @@ import Footer from '../components/Footer.astro';
 		</main>
 	</div>
 	<div class="vi-mp-footer">
-		<!-- This is a footer. I will probably put 88x31 buttons here. Also everything under CC BY-SA 4.0 because I say so. I guess. Commit push. -->
-		 <Footer />
+		<div class="vi-buttons">
+			<div>Friends :3</div>
+			<a href="https://flufftech.net/" target="_blank" rel="noreferrer"><img src="https://flufftech.net/button.png" alt="rail's button" title="rail"></a>
+			<div>Other buttons</div>
+			<img src="/buttons/astrid.png" alt="Astrid" title="me!">
+			<img src="/buttons/noai.png" alt="Made by a human, not by AI" title="f*ck AI">
+			<a href="https://ublockorigin.com/" target="_blank" rel="noreferrer"><img src="/buttons/ublock.png" alt="uBlock Origin now!" title="get uBlock"></a>
+			<img src="/buttons/transnow.gif" alt="Trans rights now!" title="Trans rights are human rights">
+			<img src="/buttons/css.jpg" alt="CSS is awesome" title="I love CSS :3">
+			<img src="/buttons/yeepee.gif" alt="yeepee autistic creature" title="Very neurotypical">
+		</div>
+		<Footer />
 	</div>
 </Layout>
 
@@ -137,5 +147,23 @@ import Footer from '../components/Footer.astro';
 		content: "";
 		width: 100%;
 		height: 4em;
+	}
+
+	.vi-buttons {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 700px;
+		padding: 1rem;
+		margin: auto;
+		gap: 0.5em;
+	}
+
+	.vi-buttons img {
+		margin: 0;
+		border-radius: 0;
+	}
+
+	.vi-buttons div {
+		flex: 1 0 100%;
 	}
 </style>
