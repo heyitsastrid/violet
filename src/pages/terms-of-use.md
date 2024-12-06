@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/BlogLayout.astro
+layout: ../layouts/BaseLayoutMD.astro
 title: Terms of Use
 description: Terms of Use for itsastrid.me and its services
 pubDate: 2024-12-02
