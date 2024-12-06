@@ -1,5 +1,5 @@
 ---
-const {title, description, image} = Astro.props;
+const {title, description, image = "/banner.png"} = Astro.props;
 const url = "https://itsastrid.me";
 const imageurl = url + image;
 import '../styles/global.css';

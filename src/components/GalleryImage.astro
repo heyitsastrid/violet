@@ -24,7 +24,7 @@ const { src, alt, title, details, licence, flickr } = Astro.props;
 	border-radius: 1rem;
 	background-color: hsl(var(--vi-accent-color--hsl)/0);
 	border: solid 1px hsl(var(--vi-body-color--hsl)/10%);
-	transition: background-color .2s;
+	transition: background-color .2s, border .2s;
 
 	display: flex;
 	flex-direction: column;
@@ -33,6 +33,10 @@ const { src, alt, title, details, licence, flickr } = Astro.props;
 
 .vi-galleryitem:has(a:hover) {
 	background-color: hsl(var(--vi-accent-color--hsl)/15%);
+}
+
+.vi-galleryitem:focus-within {
+	border: solid 1px hsl(var(--vi-body-color--hsl)/75%);
 }
 
 .vi-galleryitem figcaption {

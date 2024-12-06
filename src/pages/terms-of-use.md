@@ -5,8 +5,8 @@ description: Terms of Use for itsastrid.me and its services
 pubDate: 2024-12-02
 author: 'Astrid'
 image:
-    url: '/banner.png'
-    alt: 'Banner image'
+    url: 
+    alt: 
 ---
 This document outlines the terms of use of the website itsastrid.me (hereinafter referred to as "**the website**") when a user ("**you**") visits it. All services and resources, unless explicitly stated otherwise, are provided by the website owner ("**I**" or "**me**"). If you visit the website or decide to use any of the services or resources provided in this website by me, you agree with the following terms of use ("**terms**", "**this document**"); otherwise, if you decide to disagree, you must leave immediately.
 

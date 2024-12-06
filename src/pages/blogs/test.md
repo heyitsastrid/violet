@@ -5,9 +5,8 @@ description: What's this? I have no idea. UwU
 pubDate: 2024-12-01
 author: 'Astrid'
 image:
-    url: '/sunset.jpg'
-    alt: 'A sunset :3'
-tags: ["astro", "blogging", "learning in public"]
+    url: /bannername.png
+    alt: banenr1
 ---
 Test
 
@@ -18,5 +17,7 @@ Lorem ipsum
 i'd like a coffee, please
 
 ![alt text blah blah](/sunset.jpg)
+
+<Image height="200" width="200" src="/src/images/banner.png">
 
 nya?

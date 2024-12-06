@@ -2,7 +2,7 @@ import rss, { pagesGlobToRssItems } from '@astrojs/rss';
 
 export async function GET(context) {
   return rss({
-    title: 'astrid’s Blog',
+    title: 'astrid’s blog',
     description: 'a bunch of random stuff i like to write about',
     site: context.site,
     items: await pagesGlobToRssItems(

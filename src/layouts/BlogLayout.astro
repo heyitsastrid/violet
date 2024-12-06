@@ -1,14 +1,14 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
-const url = "https://itsastrid.me";
 const { frontmatter } = Astro.props;
 const published = new Date(frontmatter.pubDate).toLocaleDateString('en-GB');
 ---
 <BaseLayout 
 	title={frontmatter.title}
 	description={frontmatter.description}
-	image={frontmatter.image.url}
+	image={frontmatter.image.url ?? "/banner.png"}
 >
+		<a class="vi-return" href="/blogs"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="24 24 232 232"><path d="M168.49,199.51a12,12,0,0,1-17,17l-80-80a12,12,0,0,1,0-17l80-80a12,12,0,0,1,17,17L97,128Z"></path></svg> Return to <strong>blogs</strong></a>
 		<h1>{frontmatter.title}</h1>
 		<div class="vi-heading">
 			<p>By <strong>{frontmatter.author}</strong> &bull; Published on <strong>{published}</strong></p>
@@ -22,5 +22,29 @@ const published = new Date(frontmatter.pubDate).toLocaleDateString('en-GB');
 	padding: 1rem;
 	margin-bottom: 1rem;
 	border-radius: 1rem;
+}
+
+.vi-return {
+	display: inline-block;
+	font-family: var(--vi-display-font);
+	font-size: 1.15rem;
+	text-decoration: none;
+	border: solid 2px hsl(var(--vi-link-color--hsl)/0);
+	background-color: hsl(var(--vi-link-color--hsl)/5%);
+	padding: 0.5em 0.75em;
+	border-radius: 0.75em;
+
+	transition: border .2s, background-color .2s;
+}
+
+.vi-return:hover {
+	background-color: hsl(var(--vi-link-color--hsl)/20%);
+	border: solid 2px var(--vi-link-color--hover);
+}
+
+.vi-return svg {
+	display: inline;
+	fill: currentColor;
+	vertical-align: -4px;
 }
 </style>
