@@ -1,0 +1,30 @@
+---
+import { Image } from "astro:assets";
+const { src, alt, caption, author, link } = Astro.props;
+---
+<figure class="vi-galleryitem">
+	<a class="imagelink" href={src.src}>
+		<Image src={src} alt={alt} width="600" densities={[1.5, 2]} />
+	</a>
+	<figcaption>
+		<span class="caption">{caption}</span>{author && <span class="author"> &bull; {author} </span>}{link && <a href={link} class="link">(link)</a>} 
+	</figcaption>
+</figure>
+<style>
+figure {
+	margin: 1.25rem 0;
+}
+
+figure img {
+	margin: 0 0;
+}
+
+figcaption {
+	font-size: 0.8em;
+	line-height: 1.5;
+	font-style: italic;
+	padding: 0.7em 0 0.4em;
+	border-bottom: 1px solid hsl(var(--vi-accent-color--hsl)/40%);
+	color: hsl(var(--vi-body-color--hsl)/80%);
+}
+</style>

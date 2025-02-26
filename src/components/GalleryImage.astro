@@ -4,7 +4,7 @@ const { src, alt, title, details, licence, flickr } = Astro.props;
 ---
 <figure class="vi-galleryitem">
 	<a class="imagelink" href={src.src}>
-		<Image src={src} alt={alt} height="200" decoding="async" loading="lazy" />
+		<Image src={src} alt={alt} height="200" densities={[1.5, 2]} />
 	</a>
 	<figcaption>
 		<div class="title">{title}</div>

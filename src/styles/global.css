@@ -61,6 +61,8 @@ html {
 	--vi-body-color--secondary: hsl(206 25% 30%);
 	--vi-body-color--secondary--hsl: 206 25% 30%;
 
+	--vi-body-subtitle-color: hsl(300 2% 40%);
+
 	--vi-link-color: hsl(15 40% 51%);
 	--vi-link-color--hsl: 15 40% 51%;
 	--vi-link-color--hover: hsl(15 39% 33%);
@@ -83,6 +85,8 @@ html {
 
 		--vi-body-color--secondary: hsl(206 21% 79%);
 		--vi-body-color--secondary--hsl: 206 21% 79%;
+
+		--vi-body-subtitle-color: hsl(300 1% 69%);
 	
 		--vi-link-color: hsl(15 62% 71%);
 		--vi-link-color--hsl: 15 62% 71%;

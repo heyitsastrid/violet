@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-const allPosts = await Astro.glob('./blogs/*.md');
+const allPosts = await Astro.glob('./blogs/*.mdx');
 allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));
 import BlogItem from "../components/BlogItem.astro";
 ---

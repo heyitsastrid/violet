@@ -4,7 +4,7 @@ import { Image } from "astro:assets";
 ---
 <a href={src.src} class="vi-gallery__item">
 	<figure>
-		<Image src={src} alt={alt} height="250" decoding="async" loading="lazy" />
+		<Image src={src} alt={alt} height="250" densities={[1.5, 2]} />
 		<figcaption><div><div>{info}</div>{details}</div></figcaption>
 	</figure>
 </a>

@@ -6,7 +6,7 @@ export async function GET(context) {
     description: 'a bunch of random stuff i like to write about',
     site: context.site,
     items: await pagesGlobToRssItems(
-      import.meta.glob('./blogs/*.md'),
+      import.meta.glob('./blogs/*.mdx'),
     ),
 	stylesheet: '/pretty-feed-v3.xsl',
   });
