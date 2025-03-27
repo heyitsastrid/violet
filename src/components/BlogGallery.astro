@@ -1,0 +1,23 @@
+<div class="vi-bloggallery">
+	<div class="vi-bloggallery__grid">
+		<slot />
+	</div>
+</div>
+<style>
+.vi-bloggallery {
+	width: 100vw;
+	position: relative;
+	left: calc((100vw / -2) + 50%);
+	display: grid;
+	place-items: center;
+	margin: 1.5rem 0 1rem;
+}
+
+.vi-bloggallery__grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem;
+	width: clamp(50px, calc(100vw - 2rem), 1100px);
+}
+</style>

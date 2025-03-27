@@ -1,8 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-const allPosts = await Astro.glob('./blogs/*.mdx');
-allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));
 import BlogItem from "../components/BlogItem.astro";
+const allPosts = Object.values(import.meta.glob('./blogs/*.mdx', { eager: true }));
+allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));
 ---
 <BaseLayout
 	title="astrid's blogs"
@@ -10,5 +10,5 @@ import BlogItem from "../components/BlogItem.astro";
 	>
 	<h1>My blogs</h1>
 	<p>I sometimes write about random stuff. Here they are: <br><small>(<a href="/rss.xml">RSS Feed</a>)</small></p>
-	{allPosts.map((post) => <BlogItem url={post.url} title={post.frontmatter.title} pubDate={new Date(post.frontmatter.pubDate).toLocaleDateString('en-GB')} description={post.frontmatter.description} />)}
+	{allPosts.map((post: any) => <BlogItem url={post.url} title={post.frontmatter.title} pubDate={new Date(post.frontmatter.pubDate).toLocaleDateString('en-GB')} description={post.frontmatter.description} />)}
 </BaseLayout>

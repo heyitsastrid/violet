@@ -4,7 +4,7 @@ const { frontmatter } = Astro.props;
 const published = new Date(frontmatter.pubDate).toLocaleDateString('en-GB');
 ---
 <BaseLayout 
-	title={frontmatter.title}
+	title={frontmatter.title + " - astrid"}
 	description={frontmatter.description}
 	image={frontmatter.image.url ?? "/banner.png"}
 >
