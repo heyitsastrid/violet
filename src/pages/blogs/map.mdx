@@ -1,0 +1,54 @@
+---
+layout: ../../layouts/BlogLayout.astro
+title: I recreated a map
+description: Curious on how the Barcelona metro map will look like in a few years (hopefully)? I may have the answer.
+pubDate: 2026-04-26
+author: 'Astrid'
+image:
+    url: /embed/XFIC2030.png
+    alt: Xarxa ferroviària integrada central. Horitzó 2030. 
+---
+import Button from '../../components/Button.astro';
+import BlogImage from '../../components/BlogImage.astro';
+import Map from '../../images/Mapa ATM 2030.png'
+
+I've honestly forgot why I decided to start tracing the official ATM Barcelona map. In an ADHD hyperfocus moment, I managed to trace the current map and update it with future metro expansions.
+
+## The design
+
+The current integrated rail map of the Barcelona area, [made by Jug Cerović and Martí Ruiz in 2023](https://www.inat.fr/metro/barcelona/), looks very clean and balanced. In contrast with the old version of the same map, rapid transit takes the highlight in the center, as opposed to regional rail in the old version.
+
+I quite like what they've done with it, to be honest. It's certainly an improvement in pretty much all areas. 
+
+## Recreating it
+
+Luckily for me, all lines on the map are either straight or in a 45° angle, except for the Diagonal avenue, which is at a 35° angle. This meant that it was a lot easier for me to trace the original map to make my own version of it. 
+
+I did not copy every element of the map, because I was only interested in the proper Barcelona city and its surroundings, not in the whole metropolitan area (Barcelona centralism baby!). Also I was too lazy to bother with the line styles, so all lines look the exact same :3c
+
+## What does the future look like?
+
+I included several expansions to the map from the [PDI (Master Plan for Infrastructures) 2021-2030](https://www.atm.cat/mobilitat/pla-director-d-infraestructures), a 10 year plan about transportation and infrastructure. Despite its name, many of the projects listed are not going to happen within these 10 years; a lot of them are just projects but are not planned and have no feasibility study behind.
+
+Despite all of this, I decided to include the following extensions (ordered by likelihood of actually happening):
+
+- **L9/L10** central trunk
+- **L8** Pl. Espanya - Gràcia
+- **Tram** connection through the Diagonal avenue
+- **L4** La Pau - Sagrera
+- **L3** Trinitat Nova - Trinitat Vella
+- **L1** Hospital de Bellvitge - El Prat Estació
+- **L1** Fondo - Estació de Badalona
+- **L2** Poble Sec - Aeroport T1
+- **L10** Pratenc
+- **L3** Zona Universitària - Sant Feliu
+- **L12** Reina Elisenda - Finestrelles | Sant Joan de Déu
+- **T4** Estació de Sant Adrià - Port de Badalona
+
+I also included some infill stations on line 9 and line 10 that are not opened (e.g. *Motors*, *La Ribera*, or *Aeroport Terminal de Càrrega*). 
+
+## Download
+
+<BlogImage src={Map} alt="The 2030 Barcelona metro map. It includes several planned extensions besides the ones that are already being built." caption="This is the map I made" />
+
+<Button href="/map/Mapa ATM 2030.pdf" button="Download PDF map" />

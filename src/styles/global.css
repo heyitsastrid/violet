@@ -168,7 +168,7 @@ img {
 
 ol, ul {
 	margin-left:2ch;
-	margin-bottom: 1rem;
+	margin: 1rem 0 1rem 2ch;
 }
 
 li {
@@ -209,14 +209,16 @@ code {
 
 .vi-button {
 	display: inline-block;
-	padding: 0.4rem 0.8rem;
+	padding: 0.5em 0.75em;
+	border-radius: 0.75em;
 	border: solid 2px var(--vi-link-color);
 	color: var(--vi-link-color);
-	border-radius: 0.65rem;
 	font-family: var(--vi-display-font);
 	font-weight: 600;
+	font-size: 1.15rem;
+	text-decoration: none;
 
-	transition: color .1s, border-color .1s, background-color .1s;
+	transition: color .2s, border-color .2s, background-color .2s;
 }
 
 .vi-button:hover, 
@@ -224,6 +226,7 @@ code {
 	color: var(--vi-link-color--hover);
 	border-color: var(--vi-link-color--hover);
 	text-decoration: underline;
+	background-color: hsl(var(--vi-link-color--hsl)/20%);
 }
 
 .vi-button:focus-visible {
