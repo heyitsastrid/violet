@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-const { src, alt, title, details, licence, flickr } = Astro.props;
+const { src, alt, title, details, licence } = Astro.props;
 ---
 <figure class="vi-galleryitem">
 	<a class="imagelink" href={src.src}>
@@ -10,7 +10,6 @@ const { src, alt, title, details, licence, flickr } = Astro.props;
 		<div class="title">{title}</div>
 		<div class="details">{details}</div>
 		<div class="licence">{licence}</div>
-		{flickr && <div class="flickr"> &bull; <a href={flickr}>Flickr link</a></div>}
 	</figcaption>
 </figure>
 <style>
@@ -63,11 +62,5 @@ const { src, alt, title, details, licence, flickr } = Astro.props;
 	opacity: 0.8;
 	font-style: italic;
 	display: inline-block;
-}
-
-.flickr {
-	display: inline-block;
-	font-size: 0.8em;
-	font-style: italic;
 }
 </style>
