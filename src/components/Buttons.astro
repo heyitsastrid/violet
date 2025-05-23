@@ -1,3 +1,7 @@
+---
+import Miau from "../assets/miau.svg";
+import GenGat from "../assets/GenGat.svg";
+---
 <div class="vi-buttons">
 	<div>Friends :3</div>
 	<a href="https://flufftech.net/" target="_blank" rel="noreferrer"><img src="https://flufftech.net/button.png" alt="rail's button" title="rail"></a>
@@ -13,6 +17,9 @@
 	<img src="/buttons/yeepee.gif" alt="yeepee autistic creature" title="Very neurotypical">
 	<img src="/buttons/anythingbut.gif" alt="Anything but Chrome" title="ewww no">
 	<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noreferrer"><img src="/buttons/byncsa.png" alt="CC BY-NC-SA" title="CC BY-NC-SA"></a>
+	<div></div>
+	<GenGat />
+	<Miau />
 </div>
 
 <style>
@@ -34,5 +41,14 @@
 .vi-buttons div {
 	flex: 1 0 100%;
 	text-align: center;
+}
+
+:global(.vi-buttons) {
+	fill: currentColor;
+}
+
+.vi-buttons svg {
+	height: 31px;
+	width: auto;
 }
 </style>
