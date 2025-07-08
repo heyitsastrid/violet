@@ -7,6 +7,7 @@ const published = new Date(frontmatter.pubDate).toLocaleDateString('en-GB');
 	title={frontmatter.title + " - astrid"}
 	description={frontmatter.description}
 	image={frontmatter.image.url ?? "/banner.jpg"}
+	imagealt={frontmatter.image.alt}
 >
 		<h1>{frontmatter.title}</h1>
 		<div class="vi-heading">

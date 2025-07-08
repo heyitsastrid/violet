@@ -1,5 +1,5 @@
 ---
-const {title, description, image = "/banner.jpg"} = Astro.props;
+const {title, description, image = "/banner.jpg", imagealt = "Banner image"} = Astro.props;
 const url = "https://itsastrid.me";
 const imageurl = url + image;
 import '../styles/global.css';
@@ -26,6 +26,7 @@ import JumpToContent from '../components/JumpToContent.astro';
 		<meta property="og:title" content={title}>
 		<meta property="og:description" content={description}>
 		<meta property="og:image" content={imageurl}>
+		<meta property="og:image:alt" content={imagealt}>
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image">
@@ -33,6 +34,7 @@ import JumpToContent from '../components/JumpToContent.astro';
 		<meta property="twitter:title" content={title}>
 		<meta property="twitter:description" content={description}>
 		<meta property="twitter:image" content={imageurl}>
+		<meta property="twitter:image:alt" content={imagealt}>
 
 		<meta content="hsl(346 20% 43%)" data-react-helmet="true" name="theme-color">
 		
