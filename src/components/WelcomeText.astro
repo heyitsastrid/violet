@@ -1,9 +1,9 @@
 <div class="vi-welcome-text">
 	<h1>
 		Hi! 
-		<div>
-			I'm<span> astrid</span>
-		</div>
+		<span class="im">
+			I'm<span class="astrid"> astrid</span>
+		</span>
 	</h1>
 	<a href="#main" class="vi-welcome__more-info">
 		Scroll down
@@ -32,12 +32,12 @@
 		line-height: 1;
 	}
 
-	.vi-welcome-text h1 div {
+	.vi-welcome-text h1 .im {
 		font-size: clamp(3rem, 10vmin, 10rem);
 		letter-spacing: -2px;
 	}
 
-	.vi-welcome-text h1 div span {
+	.vi-welcome-text h1 .astrid {
 		color: transparent;
 		background-image: linear-gradient(45deg, hsl(346 15% 66%), hsl(15 62% 71%), hsl(346 15% 66%), hsl(15 62% 71%));
 		background-clip: text;
