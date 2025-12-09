@@ -38,6 +38,12 @@ You may not reuse or repurpose any visual content created by a third party unles
 
 You must not claim ownership of any of the original content (created by me) on the website.
 
+### 2.4. Artificial intelligence
+
+If you use any of my content to train your shitty AI, you hereby agree to give me your liver. No refunds allowed.
+
+And also, fuck you.
+
 ## 3. Changes to these terms
 
 I may make small changes to these terms without prior notice. However, no significant changes will be made without a proper announcement. Clause 1 will not suffer any significant change, ever.
