@@ -1,13 +1,13 @@
 ---
 import { Image } from "astro:assets";
-const { src, alt, caption, author, link } = Astro.props;
+const { src, alt, caption, author, link, linktext } = Astro.props;
 ---
 <figure class="vi-galleryitem">
 	<a class="imagelink" href={src.src}>
 		<Image src={src} alt={alt} width="600" densities={[1.5, 2]} />
 	</a>
 	<figcaption>
-		<span class="caption">{caption}</span>{author && <span class="author"> &bull; {author} </span>}{link && <a href={link} class="link">(link)</a>} 
+		<span class="caption">{caption}</span>{author && <span class="author"> &bull; {author} </span>}{link && <span>&nbsp;(<a href={link} class="link">{linktext}</a>)</span>}
 	</figcaption>
 </figure>
 <style>
