@@ -6,15 +6,15 @@
 	font-style: normal;
 }
 @font-face {
-	font-family: "Inter";
-	src: url("/fonts/Inter.woff2") format("woff2");
+	font-family: "Adwaita Sans";
+	src: url("/fonts/AdwaitaSans-Regular.woff2") format("woff2");
 	font-weight: 100 900;
 	font-display: swap;
 	font-style: normal;
 }
 @font-face {
-	font-family: "Inter";
-	src: url("/fonts/Inter - Italic.woff2") format("woff2");
+	font-family: "Adwaita Sans";
+	src: url("/fonts/AdwaitaSans-Italic.woff2") format("woff2");
 	font-weight: 100 900;
 	font-display: swap;
 	font-style: italic
@@ -49,8 +49,8 @@ html {
 }
 
 :root {
-	--vi-body-font: Inter, Roboto, Arial, sans-serif;
-	--vi-display-font: Manrope, Inter, Helvetica, Arial, sans-serif;
+	--vi-body-font: "Adwaita Sans", Inter, Roboto, Arial, sans-serif;
+	--vi-display-font: Manrope, "Adwaita Sans", Inter, Helvetica, Arial, sans-serif;
 
 	--vi-body-background-color: hsl(345 14% 89%);
 	--vi-body-background-color--hsl: 345 14% 89%;
