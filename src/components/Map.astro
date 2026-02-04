@@ -14,9 +14,9 @@ const { src, alt, title, details, updated, pdf, svg, commons } = Astro.props;
         <div class="details">{details}</div>
         <div class="updated">Updated on {updated}</div>
         <div class="links">
-            {pdf && <a href={pdf} class="vi-button"><PDF /> Download</a>}
-            {svg && <a href={svg} class="vi-button"><SVG /> Download</a>}
-            {commons && <a href={commons} class="vi-button"><Commons /> View</a>}
+            {pdf && <a href={pdf} class="vi-button" title="Download PDF"><PDF /> Download</a>}
+            {svg && <a href={svg} class="vi-button" title="Download SVG"><SVG /> Download</a>}
+            {commons && <a href={commons} class="vi-button" title="View it on Wikimedia Commons"><Commons /> View</a>}
         </div>
     </figcaption>
 </figure>
