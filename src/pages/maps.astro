@@ -1,0 +1,138 @@
+---
+import Map from "../components/Map.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import ATM2030 from "../images/maps/ATM 2030.png";
+import ATMcurrent from "../images/maps/ATM current.png";
+import ATMvisited from "../images/maps/ATM visited.png";
+import GIR from "../images/rodalies/RodaGIR.png";
+import LLD from "../images/rodalies/RodaLLD.png";
+import TGN from "../images/rodalies/RodaTGN.png";
+import Tram from "../images/maps/Tram.png";
+import TramMono from "../images/maps/Tram monocrom.png";
+import XFC2050 from "../images/maps/XFC2050.png";
+import Masnou from "../images/maps/Metro Masnou.png";
+import Madrit from "../images/maps/rodamadrid.png";
+---
+<BaseLayout
+	title="maps - astrid"
+	description="A collection of maps"
+	>
+	<header>
+		<h1>Maps</h1>
+		<p>This is a collection of maps I"ve made.</p>
+	</header>
+    <h2>Barcelona ATM maps</h2>
+    <p>
+        A collection of transit maps for the Barcelona metro network. Based on the <a href="https://www.inat.fr/metro/barcelona/">map designed by Jug Cerović and Martí Ruiz in 2023</a>. 
+    </p>
+    <Map 
+        src={ATM2030}
+        alt="The 2030 Barcelona metro map. It includes several planned extensions besides the ones that are already being built."
+        title="ATM 2030"
+        details="Barcelona metro map in 2030, hopefully."
+        updated="20/12/2025"
+        pdf="/map/Mapa ATM 2030.pdf"
+        commons="https://commons.wikimedia.org/wiki/File:Mapa_metro_Barcelona_futur.svg"
+        />
+    <Map 
+        src={ATMcurrent}
+        alt="The current Barcelona metro map."
+        title="ATM current"
+        details="Barcelona metro map, today."
+        updated="17/06/2025"
+        pdf="/map/Mapa ATM actual.pdf"
+        commons="https://commons.wikimedia.org/wiki/File:Mapa_metro_Barcelona_actual.svg"
+        />
+    <Map 
+        src={ATMvisited}
+        alt="The current Barcelona metro map, with dots around the map to show what stations you visited."
+        title="Visited stations"
+        details="The current Barcelona metro map, with dots around the map to show what stations you visited."
+        updated="17/06/2025"
+        svg="/map/Mapa ATM actual (estacions vistades - blanc).svg"
+        />
+
+    <h2>Rodalies maps</h2>
+    <p>A collection of Rodalies maps for Catalonia.</p>
+    <Map 
+        src={LLD}
+        alt="Rodalies map for Lleida."
+        title="Rodalia de Lleida"
+        details="Rodalies map for Lleida."
+        updated="15/01/2026"
+        pdf="/map/RodaLLD.pdf"
+        commons="https://commons.wikimedia.org/wiki/File:Mapa_Rodalies_Lleida.svg"
+        />
+
+    <Map 
+        src={GIR}
+        alt="Rodalies map for Girona."
+        title="Rodalia de Girona"
+        details="Rodalies map for Girona."
+        updated="17/01/2026"
+        pdf="/map/RodaGIR.pdf"
+        commons="https://commons.wikimedia.org/wiki/File:Mapa_Rodalies_Girona.svg"
+        />
+
+    <Map 
+        src={TGN}
+        alt="Rodalies map for Tarragona."
+        title="Rodalia de Tarragona"
+        details="Rodalies map for Tarragona."
+        updated="15/01/2026"
+        pdf="/map/RodaTGN.pdf"
+        commons="https://commons.wikimedia.org/wiki/File:Mapa_Rodalies_Tarragona.svg"
+        />
+    <h2>Tram</h2>
+    <p>Future lines diagram for the Barcelona tram network.</p>
+    <Map 
+        src={Tram}
+        alt="Future line diagram of the Barcelona tramway network."
+        title="Tram"
+        details="Future line diagram of the Barcelona tramway network, with colored lines."
+        updated="28/09/2025"
+        pdf="/map/TRAM futur.pdf"
+        svg="/map/TRAM futur.svg"
+        />
+    <Map 
+        src={TramMono}
+        alt="Future line diagram of the Barcelona tramway network."
+        title="Tram (monochrome)"
+        details="Future line diagram of the Barcelona tramway network, with monochrome lines."
+        updated="28/09/2025"
+        pdf="/map/TRAM futur (monocromàtic).pdf"
+        svg="/map/TRAM futur (monocromàtic).svg"
+        commons="https://commons.wikimedia.org/wiki/File:Diagrama_TRAM_Barcelona_futur.svg"
+        />
+
+    <h2>Xarxa Ferroviària Catalana 2050</h2>
+    <p>Just a fantasy map.</p>
+    <Map 
+        src={XFC2050}
+        alt="A map depicting the proposed railway network for Catalonia. It's a complex network of commuter, regional and high speed lines."
+        title="Xarxa Ferroviària Catalana, horitzó 2050"
+        details="Fantasy map for a regional railway network in Catalonia."
+        updated="19/01/2026"
+        pdf="/map/Xarxa Ferroviària Catalana 2050.pdf"
+        />
+    <h2>Just for the lolz</h2>
+    <p>Unserious maps made for the laughs</p>
+    <Map 
+        src={Masnou}
+        alt="Train station named El Masnou"
+        title="Metro Masnou"
+        details="It's just two commuter rail stations that are really close together."
+        updated="22/07/2025"
+        pdf="/map/Metro Masnou.pdf"
+        />
+    <Map 
+        src={Madrit}
+        alt="Rodalies de Madrit"
+        title="Rodalies de Madrit"
+        details="Badly translated map of Cercanías Madrid."
+        updated="04/02/2026"
+        pdf="/map/Madrit.pdf"
+        />
+    
+</BaseLayout>

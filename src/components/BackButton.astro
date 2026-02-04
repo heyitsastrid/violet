@@ -1,0 +1,15 @@
+---
+import Back from "../assets/back.svg";
+const { href, to } = Astro.props;
+---
+<a class="vi-return vi-button" href={href}><Back /> Return to <strong>{to}</strong></a>
+<style>
+.vi-return {
+	font-weight: 400;
+}
+
+.vi-return:not(:hover, :focus-visible) {
+	border: solid 2px hsl(var(--vi-link-color--hsl)/0);
+	background-color: hsl(var(--vi-link-color--hsl)/5%);
+}
+</style>

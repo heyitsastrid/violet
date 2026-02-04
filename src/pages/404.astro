@@ -1,14 +1,35 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import NeoCat from "../assets/neocat_nom_astrid.svg";
+import Return from "../components/BackButton.astro";
 ---
 <BaseLayout
 	title="404 error"
 	description="This page does not exist"
 	>
 	<main>
+		<Return to="homepage" href="/" />
 		<h1>This page doesn't exist</h1>
-		<img src="/banner.jpg" alt="Banner image">
 		<p>You may have followed a broken link, or who knows what you've done.</p>
-		<p><a href="/">Return to homepage</a></p>
+		<figure>
+			<NeoCat id="neocat"/>
+			<figcaption>(<a href="https://volpeon.ink/emojis/neocat/" target="_blank" rel="noreferrer">Neocat</a> is a sticker pack made by <a href="https://volpeon.ink" target="_blank" rel="noreferrer">Volpeon</a> licensed under <a href="https://spdx.org/licenses/CC-BY-NC-SA-4.0.html" target="_blank" rel="noreferrer">CC BY-NC-SA 4.0</a>)</figcaption>
+		</figure>
 	</main>
 </BaseLayout>
+
+<style>
+#neocat {
+	width: min(75vw, 400px);
+	margin-inline: auto;
+}
+
+figcaption {
+	font-size: 0.8em;
+	line-height: 1.5;
+	font-style: italic;
+	padding: 0.7em 0 0.4em;
+	color: hsl(var(--vi-body-color--hsl)/80%);
+}
+
+</style>

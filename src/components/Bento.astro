@@ -1,0 +1,73 @@
+---
+import Fediverse from "../assets/fediverse.svg";
+import Commons from "../assets/commons.svg";
+import Newspaper from "../assets/newspaper.svg"
+import Package from "../assets/package.svg";
+import Map from "../assets/map.svg";
+import Images from "../assets/images.svg";
+---
+<div class="vi-bento">
+    <a href="https://ohai.social/@aroma" class="vi-bento__box">
+        <Fediverse />
+        <span>Fediverse</span>
+    </a>
+    <a href="https://commons.wikimedia.org/wiki/User:ItsAstrid" class="vi-bento__box">
+        <Commons />
+        <span>Commons</span>
+    </a>
+    <a href="/blogs" class="vi-bento__box">
+        <Newspaper />
+        <span>Blogs</span>
+    </a>
+    <a href="/drawer" class="vi-bento__box">
+        <Package />
+        <span>Drawer</span>
+    </a>
+    <a href="/maps" class="vi-bento__box">
+        <Map />
+        <span>Maps</span>
+    </a>
+    <a href="/gallery" class="vi-bento__box">
+        <Images />
+        <span>Gallery</span>
+    </a>
+</div>
+
+<style>
+.vi-bento {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.vi-bento__box {
+    display: grid;
+    grid-template-rows: 5ch 1fr;
+    gap: .25rem;
+	border: solid 2px var(--vi-link-color);
+	color: var(--vi-link-color);
+	font-family: var(--vi-display-font);
+    padding: 0.5em 0.75em;
+	border-radius: 0.75em;
+    justify-items: center;
+    font-weight: bold;
+	background-color: hsl(var(--vi-link-color--hsl)/5%);
+    font-size: 1.2rem;
+    
+    transition: background-color .2s, color .2s, border-color .2s;
+}
+
+.vi-bento__box:hover,
+.vi-bento__box:focus-visible {
+   	background-color: hsl(var(--vi-link-color--hsl)/20%);
+	border-color: var(--vi-link-color--hover);
+	color: var(--vi-link-color--hover);
+}
+
+.vi-bento__box svg {
+    width: 5ch;
+    height: 5ch;
+    fill: currentColor;
+}
+</style>

@@ -4,6 +4,7 @@ import Gallery from '../components/Gallery.astro';
 import Layout from '../layouts/Layout.astro';
 import Footer from '../components/Footer.astro';
 import Buttons from '../components/Buttons.astro';
+import Bento from '../components/Bento.astro';
 ---
 <Layout
 	title="astrid's website - home"
@@ -31,21 +32,12 @@ import Buttons from '../components/Buttons.astro';
 				<p>I don't like copyright, which means that most pictures I take can be used for free; just remember to add attribution and we'll be fine.</p>
 			</section>
 			<section class="vi-mp-box">
-				<h2>Where?</h2>
-				<p>Find me on:</p>
-				<ul>
-					<li><a href="https://ohai.social/@aroma" rel="me">Fediverse</a> (<code>@aroma@ohai.social</code>)</li>
-					<li><a href="https://commons.wikimedia.org/wiki/User:ItsAstrid">Wikimedia Commons</a></li>
-				</ul>
-				<p>Other links:</p>
-				<ul>
-					<li><a href="/drawer">My tailor's drawer</a></li>
-					<li><a href="/blogs/">Blogs</a></li>
-				</ul>
-			</section>
-			<section class="vi-mp-box">
 				<h2>Gallery</h2>
 				<Gallery />
+			</section>
+			<section class="vi-mp-box">
+				<h2>Links</h2>
+				<Bento />
 			</section>
 		</main>
 	</div>

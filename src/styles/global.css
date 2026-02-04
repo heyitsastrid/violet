@@ -211,12 +211,13 @@ code {
 	display: inline-block;
 	padding: 0.5em 0.75em;
 	border-radius: 0.75em;
-	border: solid 2px var(--vi-link-color);
+	border: solid 0.125em var(--vi-link-color);
 	color: var(--vi-link-color);
 	font-family: var(--vi-display-font);
 	font-weight: 600;
 	font-size: 1.15rem;
 	text-decoration: none;
+	white-space: nowrap;
 
 	transition: color .2s, border-color .2s, background-color .2s;
 }
@@ -232,4 +233,12 @@ code {
 .vi-button:focus-visible {
 	background-color: hsl(var(--vi-link-color--hsl)/25%);
 	outline: transparent;
+}
+
+.vi-button svg {
+	display: inline;
+	fill: currentColor;
+	vertical-align: -4px;
+	width: 1.1em;
+	height: 1.1em;
 }
