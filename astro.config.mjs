@@ -6,5 +6,9 @@ import mdx from "@astrojs/mdx";
 // https://astro.build/config
 export default defineConfig({
   site: "https://itsastrid.me",
-  integrations: [mdx()]
+  integrations: [mdx()],
+
+  redirects: {
+    "/blogs/rodalies/": "/maps#rodalies"
+  }
 });
