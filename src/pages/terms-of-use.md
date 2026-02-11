@@ -10,9 +10,13 @@ image:
 ---
 This document outlines the terms of use of the website itsastrid.me (hereinafter referred to as "**the website**") when a user ("**you**") visits it. All services and resources, unless explicitly stated otherwise, are provided by the website owner ("**I**" or "**me**"). If you visit the website or decide to use any of the services or resources provided in this website by me, you agree with the following terms of use ("**terms**", "**this document**"); otherwise, if you decide to disagree, you must leave immediately.
 
-## 1. Tracking
+## 1. Your data
 
-When you visit this website, you waive your right to be tracked. I do not (and cannot) track you in any way. No cookies, tracking scripts, tracking pixels or any other tracking technology have been used on the website.
+I don't collect any data on this website. No cookies, tracking scripts, tracking pixels or any other tracking technology have been used on the website. I didn't really bother to learn JavaScript, to be honest.
+
+### 1.1. Hosting
+
+This website is hosted on [Netlify](https://www.netlify.com/), which may collect some personal data, such as your IP address. You may read [Netlify's privacy policy](https://www.netlify.com/privacy/).
 
 ## 2. Intellectual property
 
