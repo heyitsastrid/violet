@@ -5,10 +5,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import ATM2030 from "../images/maps/ATM 2030.png";
 import ATMcurrent from "../images/maps/ATM current.png";
 import ATMvisited from "../images/maps/ATM visited.png";
+import BCN from "../images/maps/RodaBCN.png";
 import GIR from "../images/maps/RodaGIR.png";
 import LLD from "../images/maps/RodaLLD.png";
 import TGN from "../images/maps/RodaTGN.png";
-import BCN from "../images/maps/RodaBCN.png";
 import Tram from "../images/maps/Tram.png";
 import TramMono from "../images/maps/Tram monocrom.png";
 import XFC2050 from "../images/maps/XFC2050.png";
@@ -58,15 +58,14 @@ import Madrit from "../images/maps/rodamadrid.png";
     <h2 id="rodalies">Rodalies maps</h2>
     <p>A collection of Rodalies maps for Catalonia.</p>
     <Map 
-        src={LLD}
-        alt="Rodalies map for Lleida."
-        title="Rodalia de Lleida"
-        details="Rodalies map for Lleida."
-        updated="15/01/2026"
-        pdf="/map/RodaLLD.pdf"
-        commons="https://commons.wikimedia.org/wiki/File:Mapa_Rodalies_Lleida.svg"
+        src={BCN}
+        alt="Rodalies map for Barcelona."
+        title="Rodalia de Barcelona"
+        details="Rodalies map for Barcelona."
+        updated="18/02/2026"
+        pdf="/map/RodaBCN.pdf"
+        commons="https://commons.wikimedia.org/wiki/File:Mapa_Rodalies_Barcelona.svg"
         />
-
     <Map 
         src={GIR}
         alt="Rodalies map for Girona."
@@ -76,7 +75,15 @@ import Madrit from "../images/maps/rodamadrid.png";
         pdf="/map/RodaGIR.pdf"
         commons="https://commons.wikimedia.org/wiki/File:Mapa_Rodalies_Girona.svg"
         />
-
+    <Map 
+        src={LLD}
+        alt="Rodalies map for Lleida."
+        title="Rodalia de Lleida"
+        details="Rodalies map for Lleida."
+        updated="15/01/2026"
+        pdf="/map/RodaLLD.pdf"
+        commons="https://commons.wikimedia.org/wiki/File:Mapa_Rodalies_Lleida.svg"
+        />
     <Map 
         src={TGN}
         alt="Rodalies map for Tarragona."
@@ -86,15 +93,7 @@ import Madrit from "../images/maps/rodamadrid.png";
         pdf="/map/RodaTGN.pdf"
         commons="https://commons.wikimedia.org/wiki/File:Mapa_Rodalies_Tarragona.svg"
         />
-    <Map 
-        src={BCN}
-        alt="Rodalies map for Barcelona."
-        title="Rodalia de Barcelona"
-        details="Rodalies map for Barcelona."
-        updated="18/02/2026"
-        pdf="/map/RodaBCN.pdf"
-        commons="https://commons.wikimedia.org/wiki/File:Mapa_Rodalies_Barcelona.svg"
-        />
+
     <h2>Tram</h2>
     <p>Future lines diagram for the Barcelona tram network.</p>
     <Map 
