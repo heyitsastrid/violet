@@ -49,27 +49,29 @@ html {
 }
 
 :root {
+	scrollbar-color: var(--vi-accent-color) var(--vi-body-background-color);
+
 	--vi-body-font: "Adwaita Sans", Inter, Roboto, Arial, sans-serif;
 	--vi-display-font: Manrope, "Adwaita Sans", Inter, Helvetica, Arial, sans-serif;
 
-	--vi-body-background-color: hsl(345 14% 89%);
-	--vi-body-background-color--hsl: 345 14% 89%;
+	--vi-body-background-color: hsl(350 13% 91%);
+	--vi-body-background-color--hsl: 350 13% 91%;
 	--vi-body-color: hsl(300 7% 14%);
-	--vi-body-color--hover: hsl(300 3% 25%);
 	--vi-body-color--hsl: 300 7% 14%;
+	--vi-body-color--hover: hsl(300 3% 25%);
 
 	--vi-body-color--secondary: hsl(206 25% 30%);
 	--vi-body-color--secondary--hsl: 206 25% 30%;
 
-	--vi-body-subtitle-color: hsl(300 2% 40%);
+	--vi-body-subtitle-color: hsl(300 3% 25%);
 
-	--vi-link-color: hsl(15 40% 51%);
-	--vi-link-color--hsl: 15 40% 51%;
-	--vi-link-color--hover: hsl(15 39% 33%);
+	--vi-link-color: hsl(15 39% 42%);
+	--vi-link-color--hsl: 15 39% 42%;
+	--vi-link-color--hover: hsl(14 61% 61%);
 
-	--vi-accent-color: hsl(346 20% 43%);
-	--vi-accent-color--hsl: 346 20% 43%;
-	--vi-accent-color--hover: hsl(347 19% 27%);
+	--vi-accent-color: hsl(345 20% 35%);
+	--vi-accent-color--hsl: 345 20% 35%;
+	--vi-accent-color--hover: hsl(348 19% 27%);
 	--vi-accent-color--secondary: hsl(14 61% 61%);
 
 	--vi-navbar-background-color: hsl(200 15% 92%/50%);
@@ -79,25 +81,25 @@ html {
 	:root {
 		--vi-body-background-color: hsl(300 7% 14%);
 		--vi-body-background-color--hsl: 300 7% 14%;
-		--vi-body-color: hsl(345 14% 89%);
-		--vi-body-color--hover: hsl(300 1% 57%);
-		--vi-body-color--hsl: 345 14% 89%;
+		--vi-body-color: hsl(350 13% 91%);
+		--vi-body-color--hover: hsl(344 15% 75%);
+		--vi-body-color--hsl: 350 13% 91%;
 
 		--vi-body-color--secondary: hsl(206 21% 79%);
 		--vi-body-color--secondary--hsl: 206 21% 79%;
 
-		--vi-body-subtitle-color: hsl(300 1% 69%);
+		--vi-body-subtitle-color: hsl(300 1% 74%);
 	
-		--vi-link-color: hsl(15 62% 71%);
+		--vi-link-color: hsl(15 62% 76%);
 		--vi-link-color--hsl: 15 62% 71%;
-		--vi-link-color--hover: hsl(14, 59%, 85%);
+		--vi-link-color--hover: hsl(14 61% 61%);
 
-		--vi-accent-color: hsl(346 15% 66%);
-		--vi-accent-color--hsl: 346 15% 66%;
+		--vi-accent-color: hsl(344 15% 75%);
+		--vi-accent-color--hsl: 344 15% 75%;
 		--vi-accent-color--hover: hsl(345 14% 89%);
 		--vi-accent-color--secondary: hsl(15 62% 71%);
 	
-		--vi-navbar-background-color: hsl(199 10% 38%/50%);
+		--vi-navbar-background-color: hsl(200 11% 28%/50%);
 	}	
 }
 
@@ -106,7 +108,9 @@ body {
 	color: var(--vi-body-color);
 	line-height: 1.65;
 	font-family: var(--vi-body-font);
-	font-weight: 400;
+	font-weight: 450;
+
+	accent-color: var(--vi-accent-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -168,13 +172,25 @@ img {
 }
 
 ol, ul {
-	margin-left:2ch;
 	margin: 1rem 0 1rem 2ch;
 }
 
 li {
 	margin-bottom: 0.25em;
 	line-height: 1.45;
+}
+
+ul li::marker {
+	color: var(--vi-accent-color);
+}
+
+ul ul {
+	list-style-type: disc;
+	margin-top: 0.25em;
+}
+
+ul ul li::marker {
+	color: var(--vi-accent-color--secondary);
 }
 
 ol:last-child, ul:last-child, li:last-child {
@@ -239,7 +255,7 @@ code {
 .vi-button svg {
 	display: inline;
 	fill: currentColor;
-	vertical-align: -4px;
+	vertical-align: -0.25em;
 	width: 1.1em;
 	height: 1.1em;
 }

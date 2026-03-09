@@ -2,7 +2,6 @@
 import Fediverse from "../assets/fediverse.svg";
 import Commons from "../assets/commons.svg";
 import Newspaper from "../assets/newspaper.svg"
-import Package from "../assets/package.svg";
 import Drawer from "../assets/drawer.svg";
 import Map from "../assets/map.svg";
 import Images from "../assets/images.svg";
@@ -37,7 +36,7 @@ import Images from "../assets/images.svg";
 <style>
 .vi-bento {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(12ch, 1fr));
     gap: 1rem;
     margin-top: 1rem;
 }
@@ -46,14 +45,14 @@ import Images from "../assets/images.svg";
     display: grid;
     grid-template-rows: 5ch 1fr;
     gap: .25rem;
-	border: solid 2px var(--vi-link-color);
-	color: var(--vi-link-color);
+	border: solid 2px var(--vi-accent-color);
+	color: var(--vi-accent-color);
 	font-family: var(--vi-display-font);
     padding: 0.5em 0.75em;
 	border-radius: 0.75em;
     justify-items: center;
     font-weight: bold;
-	background-color: hsl(var(--vi-link-color--hsl)/5%);
+	background-color: hsl(var(--vi-accent-color--hsl)/5%);
     font-size: 1.2rem;
     
     transition: background-color .2s, color .2s, border-color .2s;
@@ -61,9 +60,9 @@ import Images from "../assets/images.svg";
 
 .vi-bento__box:hover,
 .vi-bento__box:focus-visible {
-   	background-color: hsl(var(--vi-link-color--hsl)/20%);
-	border-color: var(--vi-link-color--hover);
-	color: var(--vi-link-color--hover);
+   	background-color: hsl(var(--vi-accent-color--hsl)/20%);
+	border-color: var(--vi-accent-color--hover);
+	color: var(--vi-accent-color--hover);
 }
 
 .vi-bento__box svg {

@@ -15,6 +15,10 @@ import Bento from '../components/Bento.astro';
 		<div class="vi-welcome">
 			<WelcomeText />
 		</div>
+		<div class="vi-main__caption">
+			<p class="vi-main__caption__title">Sunset in a remote Spanish town</p>
+			<p>August 2022. Taken by myself during the summer vacations.</p>
+		</div>
 		<main id="main">
 			<section class="vi-mp-box">
 				<h2>Who?</h2>
@@ -83,6 +87,10 @@ import Bento from '../components/Bento.astro';
 			background: linear-gradient(to top, hsl(300 7% 14%/60%), hsl(300 7% 14%/0));
 			content: "";
 		}
+
+		.vi-main__caption {
+			display: none;
+		}
 	}
 
 	@media only screen and (min-width: 900px) {
@@ -95,10 +103,34 @@ import Bento from '../components/Bento.astro';
 			padding: 2em 2em 6em;
 		}
 
+		.vi-main__caption {
+			grid-area: 1/2/2/3;
+			place-self: start end;
+
+			writing-mode: sideways-lr;
+			max-height: min(60vh, 60ch);
+			margin-top: 3.5rem;
+			font-family: var(--vi-display-font);
+			font-weight: 500;
+			line-height: 1.25;
+			text-align: end;
+			opacity: 0.75;
+		}
+
+		.vi-main__caption__title {
+			font-size: 1.15em;
+			font-weight: 800;
+		}
+
+		.vi-main__caption p {
+			margin: 0;
+		}
+		
 		main {
 			margin-top: 100vh;
 			max-width: 700px;
 			margin-left: auto;
+			grid-area: 1/2/2/3
 		}
 	}
 
@@ -107,9 +139,9 @@ import Bento from '../components/Bento.astro';
 		padding: 1.5rem;
 		margin: 1rem 0;
 		border-radius: 1.25rem;
-		border: solid 1px hsl(var(--vi-body-color--secondary--hsl)/50%);
+		border: solid 0.075em hsl(var(--vi-body-color--secondary--hsl)/30%);
 		backdrop-filter: blur(5px);
-		-webkit-backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(5px);
 	}
 
 	.vi-mp-box h2:first-child {
