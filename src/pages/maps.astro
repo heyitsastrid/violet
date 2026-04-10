@@ -17,6 +17,7 @@ import Masnou from "../images/maps/Metro Masnou.png";
 import Madrit from "../images/maps/rodamadrid.png";
 import Aberdeen from "../images/maps/Aberdeen.png";
 import Caracas from "../images/maps/Metro Caracas.png";
+import CaracasFuturo from "../images/maps/Metro Caracas (futuro).png";
 ---
 <BaseLayout
 	title="maps - astrid"
@@ -120,15 +121,23 @@ import Caracas from "../images/maps/Metro Caracas.png";
         />
 
     <h2 id="caracas">Metro Caracas</h2>
-    <p>Unofficial map for the Caracas metro network.</p>
+    <p>I've never been to Caracas, but I saw their map and had to redesign it. </p>
     <Map 
         src={Caracas}
         alt="A map depicting the Caracas metro network, which also includes the Los Teques metro."
         title="Metro Caracas"
-        details="I've never been to Caracas, but I saw their map and had to redesign it."
+        details="Unofficial map for the Caracas metro network."
         updated="21/03/2026"
         pdf="/map/Metro Caracas.pdf"
         commons="https://commons.wikimedia.org/wiki/File:Mapa_Metro_Caracas.svg"
+        />
+    <Map 
+        src={CaracasFuturo}
+        alt="A map depicting the Caracas metro network, which includes the Los Teques metro. It also shows lines that are under construction."
+        title="Metro Caracas (with extensions)"
+        details="Modified version of the map, with planned extensions."
+        updated="11/04/2026"
+        pdf="/map/Metro Caracas (futuro).pdf"
         />
 
     <h2 id="XFC">Xarxa Ferroviària Catalana 2050</h2>    
