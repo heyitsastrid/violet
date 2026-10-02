@@ -19,7 +19,8 @@ import Aberdeen from "../images/maps/Aberdeen.png";
 import Caracas from "../images/maps/Metro Caracas.png";
 import CaracasFuturo from "../images/maps/Metro Caracas (futuro).png";
 import FEVE from "../images/maps/FEVE.png"
-import R2040 from "../images/maps/Rodalies BCN 2040.png"
+import BCN2040 from "../images/maps/Rodalies BCN 2040.png"
+import TGN2040 from "../images/maps/Rodalies TGN 2040.png"
 ---
 <BaseLayout
 	title="maps - astrid"
@@ -102,13 +103,21 @@ import R2040 from "../images/maps/Rodalies BCN 2040.png"
 
     <h2 id="rodalies-2040">2040 rail service plan</h2>
     <p>All the planned services and extensions for 2040 by the Catalonian government.</p>
-    <Map 
-        src={R2040}
+    <Map
+        src={BCN2040}
         alt="Planned services and extensions for 2040 in Barcelona."
         title="Rodalia de Barcelona 2040"
         details="Rodalies map for Barcelona in 2040."
-        updated="07/08/2026"
+        updated="02/10/2026"
         pdf="/map/Rodalies BCN 2040.pdf"
+        />
+    <Map
+        src={TGN2040}
+        alt="Planned services and extensions for 2040 in Tarragona."
+        title="Rodalia de Tarragona 2040"
+        details="Rodalies map for Tarragona in 2040."
+        updated="02/10/2026"
+        pdf="/map/Rodalies Tarragona 2040.pdf"
         />
 
     <h2 id="tram">Tram</h2>
