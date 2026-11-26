@@ -18,9 +18,10 @@ import Madrit from "../images/maps/rodamadrid.png";
 import Aberdeen from "../images/maps/Aberdeen.png";
 import Caracas from "../images/maps/Metro Caracas.png";
 import CaracasFuturo from "../images/maps/Metro Caracas (futuro).png";
-import FEVE from "../images/maps/FEVE.png"
-import BCN2040 from "../images/maps/Rodalies BCN 2040.png"
-import TGN2040 from "../images/maps/Rodalies TGN 2040.png"
+import FEVE from "../images/maps/FEVE.png";
+import BCN2040 from "../images/maps/Rodalies BCN 2040.png";
+import TGN2040 from "../images/maps/Rodalies TGN 2040.png";
+import Euskotren from "../images/maps/Euskotren.png";
 ---
 <BaseLayout
 	title="maps - astrid"
@@ -191,7 +192,18 @@ import TGN2040 from "../images/maps/Rodalies TGN 2040.png"
         updated="23/11/2025"
         pdf="/map/ICCat.pdf"
         />
-        
+
+    <h2 id="Euskotren">Euskotren network</h2>    
+    <p>Narrow gauge railway network in Euskal Herria</p>
+    <Map 
+        src={Euskotren}
+        alt="A snippet of the rail network around the city of Bilbao"
+        title="Euskotren"
+        details="Network map of Euskotren"
+        updated="26/11/2026"
+        pdf="/map/Euskotren mapa (zonal).pdf"
+        />
+
     <h2 id="lolz">Just for the lolz</h2>
     <p>Unserious maps made for the laughs</p>
     <Map 
